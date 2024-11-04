@@ -31,7 +31,6 @@ const msg = ref("123");
   padding: 20px;
   margin-top: 100px;
   background-color: #242424;
-  
 }
 
 .logo:hover {
