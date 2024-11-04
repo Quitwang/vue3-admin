@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+tsconfig.app.json
+tsconfig.node.json
