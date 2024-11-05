@@ -1,4 +1,22 @@
+// {
+//   "files": [],
+//   // "references": [
+//   //   {
+//   //     "path": "./tsconfig.app.json"
+//   //   },
+//   //   {
+//   //     "path": "./tsconfig.node.json"
+//   //   }
+//   // ],
+//   {
+//     "include": [
+//       "src/**/*.ts",
+//       "src/**/*.d.ts",
+//       "src/**/*.tsx",
+//       "src/**/*.vue",
+//       "./auto-imports.d.ts" // 引入到这里
+//     ]
+//   }
 {
-  "files": [],
-  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "./auto-imports.d.ts"]
 }
