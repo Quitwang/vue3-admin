@@ -17,7 +17,7 @@
     "lint:stylelint": "stylelint \"**/*.{css,scss,vue,html}\" --fix",
     "prepare": "husky install",
     "lint:lint-staged": "lint-staged",
-    "commit": "git-cz"
+    "commit": "git add -A && czg && git push"
   },
   "dependencies": {
     "@vue/eslint-config-typescript": "^14.1.3",
