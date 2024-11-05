@@ -1,16 +1,13 @@
 {
-  "recommendations": ["Vue.volar"],
-  "editor.formatOnSave": true, // 保存格式化文件
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // 指定 prettier 为所有文件默认格式化器
-  // Stylelint 校验文件
-  "stylelint.validate": ["css", "scss", "vue", "html"],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true // 开启 Stylelint 保存自动检测
-},
+  "recommendations": [
+    "vue.volar",
+    "hollowtree.vue-snippets",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "syler.sass-indented",
+    "mikestead.dotenv"
+  ]
 }
-/*
-    我这是cursor的配置，vscode的配置在settings.json文件中
-  打开 File → Preferences → Settings 搜索 Editor: Code Actions On Save 选择 Workspace标签设置工作区，点击 Edit in settings.json
-  复制到settings.json文件中
-  打开设置  搜索 Format On Save 选中改选项
-*/

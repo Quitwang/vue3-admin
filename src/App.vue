@@ -3,6 +3,7 @@ import { ref } from "vue";
 import "dayjs/locale/zh-cn";
 const msg = ref<string>("123");
 </script>
+
 <template>
   <el-config-provider>
     <!-- <router-view></router-view> -->
