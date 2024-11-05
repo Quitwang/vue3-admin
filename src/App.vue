@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 import "dayjs/locale/zh-cn";
 const msg = ref<string>("123");
+const a = reactive({ name: "zhangsan" });
 </script>
 
 <template>
   <el-config-provider>
     <!-- <router-view></router-view> -->
     <div class="text-red mt100">{{ msg }}</div>
+    <div>{{ a.name }}</div>
   </el-config-provider>
 </template>
 <style scoped lang="scss">

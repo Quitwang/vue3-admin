@@ -1,12 +1,28 @@
 export default {
-  ignores: [(commit) => commit.includes("init")],
+  ignores: [commit => commit.includes("init")],
   extends: ["@commitlint/config-conventional"],
   rules: {
     "type-enum": [
       2,
       "always",
-      ["feat", "fix", "docs", "style", "refactor", "perf", "test", "build", "ci", "chore", "revert", "wip", "workflow", "types", "release"],
-    ],
+      [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert",
+        "wip",
+        "workflow",
+        "types",
+        "release"
+      ]
+    ]
   },
   prompt: {
     messages: {
@@ -21,7 +37,7 @@ export default {
       footer: "列举关联issue (可选) 例如: #31, #I3244 :\n",
       generatingByAI: "正在通过 AI 生成你的提交简短描述...",
       generatedSelectByAI: "选择一个 AI 生成的简短描述:",
-      confirmCommit: "是否提交或修改commit ?",
+      confirmCommit: "是否提交或修改commit ?"
     },
     // prettier-ignore
     types: [
@@ -68,6 +84,6 @@ export default {
     defaultBody: "",
     defaultIssues: "",
     defaultScope: "",
-    defaultSubject: "",
-  },
+    defaultSubject: ""
+  }
 };
