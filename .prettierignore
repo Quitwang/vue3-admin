@@ -1,10 +1,9 @@
-dist
-node_modules
-public
-.husky
-.vscode
-.idea
-*.sh
-*.md
+/dist/*
+.local
+/node_modules/**
 
-src/assets
+**/*.svg
+**/*.sh
+
+/public/*
+stats.html

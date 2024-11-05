@@ -9,8 +9,8 @@ const pathSrc = path.resolve(__dirname, "src");
 export default defineConfig({
   resolve: {
     alias: {
-      "@": pathSrc, // 设置别名
-    },
+      "@": pathSrc // 设置别名
+    }
   },
   plugins: [
     vue(),
@@ -22,20 +22,20 @@ export default defineConfig({
       eslintrc: {
         enabled: true, // 是否自动生成 eslint 规则，建议生成之后设置 false
         filepath: "./.eslintrc-auto-import.json", // 指定自动导入函数 eslint 规则的文件
-        globalsPropValue: true,
+        globalsPropValue: true
       },
-      dts: true, // 指定自动导入函数TS类型声明文件路径
+      dts: true // 指定自动导入函数TS类型声明文件路径
     }),
     Components({
       dts: true,
-      resolvers: [ElementPlusResolver()],
-    }),
+      resolvers: [ElementPlusResolver()]
+    })
   ],
   css: {
     preprocessorOptions: {
       scss: {
-        javascriptEnabled: true,
-      },
-    },
-  },
+        javascriptEnabled: true
+      }
+    }
+  }
 });

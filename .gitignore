@@ -10,11 +10,13 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+stats.html
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 *.suo
@@ -22,6 +24,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
